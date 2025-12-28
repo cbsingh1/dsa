@@ -21,20 +21,25 @@ public class TreeNode {
     }
 
     public static void main(String[] args) {
+        TreeNode root = getTreeNode();
+
+        System.out.println(inOrderTraversalIterative(root));
+        System.out.println(inorderTraversalRecursive(root));
+        //System.out.println(postOrderTraversalUsing2Stacks(root));
+        //System.out.println(postOrderTraversalUsing1Stack(root));
+        //System.out.println(postOrderTraversalIterative(root));
+        //System.out.println(preOrderTraversalIterative(root));
+       // System.out.println(levelOrderTraversalIterative(root));
+    }
+
+    private static TreeNode getTreeNode() {
         TreeNode left = new TreeNode(2);
         TreeNode right = new TreeNode(3);
         left.left = new TreeNode(4);
         left.right = new TreeNode(5);
         right.left = new TreeNode(6);
         right.right = new TreeNode(7);
-        TreeNode root = new TreeNode(1, left, right);
-
-        System.out.println(postOrderTraversalUsing2Stacks(root));
-        System.out.println(postOrderTraversalUsing1Stack(root));
-        System.out.println(postOrderTraversalIterative(root));
-        //System.out.println(preOrderTraversalIterative(root));
-        // System.out.println(inOrderTraversalIterative(root));
-        //System.out.println(levelOrderTraversalIterative(root));
+        return new TreeNode(1, left, right);
     }
 
     static List<Integer> inOrderTraversalIterative(TreeNode root) {
@@ -153,6 +158,21 @@ public class TreeNode {
         }
         return resultList;
 
+    }
+
+    static List<Integer> inorderTraversalRecursive(TreeNode root) {
+        var result = new ArrayList<Integer>();
+        inorderTraversalRecursiveHelper(root, result);
+        return result;
+    }
+
+    private static void inorderTraversalRecursiveHelper(TreeNode root, List<Integer> result) {
+        if (root == null)
+            return;
+
+        inorderTraversalRecursiveHelper(root.left, result);
+        result.add(root.val);
+        inorderTraversalRecursiveHelper(root.right, result);
     }
 
     @Override
