@@ -1,4 +1,4 @@
-# Data structure and Algorithms with java
+# Data structure and Algorithms
 
 ### Blind 75
 
@@ -9,6 +9,7 @@
 | 3  | [Two sum](https://leetcode.com/problems/two-sum)                                              | [Solution](https://github.com/cbsingh1/DataStructureWithJava/blob/main/src/main/java/com/cbsingh/leetcode/Leetcode1_TwoSum.java)                      |
 | 4  | [Group Anagrams](https://leetcode.com/problems/group-anagrams)                                | [Solution](https://github.com/cbsingh1/DataStructureWithJava/blob/main/src/main/java/com/cbsingh/leetcode/Leetcode49_GroupAnagrams.java)              |
 | 5  | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)              | [Solution](https://github.com/cbsingh1/DataStructureWithJava/blob/main/src/main/java/com/cbsingh/leetcode/Leetcode347_TopKFrequentElements.java)      |
+| 6  | [Encode and Decode Strings](https://neetcode.io/problems/string-encode-and-decode/question)   | [Solution](https://github.com/cbsingh1/dsa/blob/main/src/main/java/com/cbsingh/leetcode/EncodeDecodeString.java)                                      |
 | 7  | [Product of array except self](https://leetcode.com/problems/product-of-array-except-self)    | [Solution](https://github.com/cbsingh1/DataStructureWithJava/blob/main/src/main/java/com/cbsingh/leetcode/Leetcode238_ProductOfArrayExceptSelf.java)  |
 | 12 | [Best time to buy/sell stocks](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solution](https://github.com/cbsingh1/DataStructureWithJava/blob/main/src/main/java/com/cbsingh/leetcode/LeetCode121_BestTimeToBuyAndSellStock.java) |
 |    | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray)                            | [Solution](https://github.com/cbsingh1/DataStructureWithJava/blob/main/src/main/java/com/cbsingh/leetcode/LeetCode53_MaxSubArray.java)                |
