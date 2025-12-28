@@ -1,32 +1,22 @@
 plugins {
     `java-library`
-    `maven-publish`
 }
 
 repositories {
-    mavenLocal()
-    maven {
-        url = uri("https://repo.maven.apache.org/maven2/")
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
 
-group = "com.cbsingh"
-version = "1.0-SNAPSHOT"
-description = "DailyCodingProblems"
-java.sourceCompatibility = JavaVersion.VERSION_21
-
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    testImplementation(libs.junit.jupiter.api)
+    testRuntimeOnly(libs.junit.jupiter.engine)
 }
 
 tasks.test {
     useJUnitPlatform()
-}
-
-
-publishing {
-    publications.create<MavenPublication>("maven") {
-        from(components["java"])
-    }
 }
